@@ -8,14 +8,14 @@
     <li>Clone este repositório:</li>
     <pre><code>git clone https://github.com/seu_usuario/webscraping-mercadolivre.git</code></pre>
     
-    <li>Instale as dependências necessárias:</li>
-    <pre><code>pip install -r requirements.txt</code></pre>
+    Instale as dependências necessárias:
+    pip install -r requirements.txt
     
-    <li>Crie um arquivo <code>.env</code> na raiz do projeto com as seguintes variáveis:</li>
-    <pre><code>HOST=your_mysql_host
-USER=your_mysql_user
-PASSWORD=your_mysql_password
-DB_NAME_PROD=your_database_name</code></pre>
+    Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
+    HOST=your_mysql_host
+    USER=your_mysql_user
+    PASSWORD=your_mysql_password
+    DB_NAME_PROD=your_database_name</code></pre>
   </ol>
   
   <h2>Execução</h2>
@@ -34,14 +34,14 @@ CREATE TABLE items (
   New_price FLOAT
 );</code></pre>
     
-    <li>Para iniciar o processo de coleta de dados, execute o seguinte comando:</li>
-    <pre><code>scrapy crawl mercadolivre -o ../../data/data.jsonl</code></pre>
+    Para iniciar o processo de coleta de dados, execute o seguinte comando:
+    scrapy crawl mercadolivre -o ../../data/data.jsonl
     
-    <li>Após a coleta de dados, processe e salve os dados no MySQL executando o script:</li>
-    <pre><code>python data_processing.py</code></pre>
+    Após a coleta de dados, processe e salve os dados no MySQL executando o script:
+    python data_processing.py
     
-    <li>Para visualizar o dashboard interativo, execute o seguinte comando:</li>
-    <pre><code>streamlit run dashboard/dashboard.py</code></pre>
+    Para visualizar o dashboard interativo, execute o seguinte comando:
+    streamlit run dashboard/dashboard.py
   </ol>
   
   <h2>Arquivos Principais</h2>
