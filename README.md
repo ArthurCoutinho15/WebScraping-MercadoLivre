@@ -11,10 +11,10 @@
     Instale as dependências necessárias:
     
     Crie um arquivo <code>.env</code> na raiz do projeto com as seguintes variáveis:
-  HOST=your_mysql_host
-  USER=your_mysql_user
-  PASSWORD=your_mysql_password
-  DB_NAME_PROD=your_database_name
+    HOST=your_mysql_host
+    USER=your_mysql_user
+    PASSWORD=your_mysql_password
+    DB_NAME_PROD=your_database_name
   </ol>
   
   <h2>Execução</h2>
