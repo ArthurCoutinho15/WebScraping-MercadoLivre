@@ -61,7 +61,7 @@ CREATE TABLE items (
   </ol>
 <h2>Utilização do Streamlit</h2>
 <p>
-    O Streamlit é utilizado para criar um dashboard interativo que mostra os dados das commodities e suas transações.
+    O Streamlit é utilizado para criar um dashboard interativo que mostra os dados de tênis vendidos no mercado livre e seus KPI's.
 </p>
 
 <h3>Execução do Streamlit</h3>
