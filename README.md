@@ -1,4 +1,4 @@
-<h1>Web Scraping - Monitoramento de Preços de Tênis de Corrida Masculinos no Mercado Livre</h1>
+ <h1>Web Scraping - Monitoramento de Preços de Tênis de Corrida Masculinos no Mercado Livre</h1>
   
   <h2>Descrição</h2>
   <p>Este projeto realiza a coleta de dados de tênis de corrida masculinos do site Mercado Livre, processa esses dados, e os salva em uma base de dados MySQL. Em seguida, um dashboard interativo é criado utilizando Streamlit para visualização dos principais indicadores de desempenho (KPIs).</p>
@@ -8,40 +8,40 @@
     <li>Clone este repositório:</li>
     <pre><code>git clone https://github.com/seu_usuario/webscraping-mercadolivre.git</code></pre>
     
-    Instale as dependências necessárias:
+    <li>Instale as dependências necessárias:</li>
+    <pre><code>pip install -r requirements.txt</code></pre>
     
-    Crie um arquivo <code>.env</code> na raiz do projeto com as seguintes variáveis:
-    HOST=your_mysql_host
-    USER=your_mysql_user
-    PASSWORD=your_mysql_password
-    DB_NAME_PROD=your_database_name
+    <li>Crie um arquivo <code>.env</code> na raiz do projeto com as seguintes variáveis:</li>
+    <pre><code>HOST=your_mysql_host
+USER=your_mysql_user
+PASSWORD=your_mysql_password
+DB_NAME_PROD=your_database_name</code></pre>
   </ol>
   
   <h2>Execução</h2>
-  <ol>
-      <li>Crie um banco de dados mercado_livre e a seguinte tabela</li>
-      
-      use mercado_livre;
+  <ol start="4">
+    <li>Crie um banco de dados <code>mercado_livre</code> e a seguinte tabela:</li>
+    <pre><code>USE mercado_livre;
+
+CREATE TABLE items (
+  Brand VARCHAR(25),
+  Name VARCHAR(150),
+  Reviews_rating_number FLOAT,
+  Reviews_amount INT,
+  Source VARCHAR(100),
+  Data_coleta DATETIME,
+  Old_price FLOAT,
+  New_price FLOAT
+);</code></pre>
     
-      create table items(
-      Brand varchar(25),
-      Name varchar(150),
-      Reviews_rating_number float,
-      Reviews_amount int,
-      Source varchar(100),
-      Data_coleta Datetime,
-      Old_price float,
-      new_Price float);
-  </ol>
-  <ol>
     <li>Para iniciar o processo de coleta de dados, execute o seguinte comando:</li>
-    <pre><code>scrapy crawl mercadolivre</code></pre>
+    <pre><code>scrapy crawl mercadolivre -o ../../data/data.jsonl</code></pre>
     
-    Após a coleta de dados, processe e salve os dados no MySQL executando o script:
-    python data_processing.py
+    <li>Após a coleta de dados, processe e salve os dados no MySQL executando o script:</li>
+    <pre><code>python data_processing.py</code></pre>
     
-    Para visualizar o dashboard interativo, execute o seguinte comando:
-    streamlit run dashboard.py
+    <li>Para visualizar o dashboard interativo, execute o seguinte comando:</li>
+    <pre><code>streamlit run dashboard/dashboard.py</code></pre>
   </ol>
   
   <h2>Arquivos Principais</h2>
@@ -60,6 +60,3 @@
     <li>Streamlit</li>
     <li>dotenv</li>
   </ul>
-  
-scrapy crawl mercadolivre -o ../../data/data.jsonl
-streamlit run dashboard/dashboard.py
