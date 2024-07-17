@@ -76,4 +76,5 @@ streamlit run script.py
     <li>Abra o navegador e acesse <a href="http://localhost:8501">http://localhost:8501</a> para visualizar o dashboard.</li>
 </ol>
 <img src='https://github.com/ArthurCoutinho15/WebScraping-MercadoLivre/blob/main/img/Captura%20de%20tela%202024-07-16%20232921.png'/>
+<img src='https://github.com/ArthurCoutinho15/WebScraping-MercadoLivre/blob/main/img/Captura%20de%20tela%202024-07-16%20232956.png'/>
 
