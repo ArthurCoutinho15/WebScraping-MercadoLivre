@@ -8,14 +8,13 @@
     <li>Clone este repositório:</li>
     <pre><code>git clone https://github.com/seu_usuario/webscraping-mercadolivre.git</code></pre>
     
-    <li>Instale as dependências necessárias:</li>
-    <pre><code>pip install -r requirements.txt</code></pre>
+    Instale as dependências necessárias:
     
-    <li>Crie um arquivo <code>.env</code> na raiz do projeto com as seguintes variáveis:</li>
-    <pre><code>HOST=your_mysql_host
-USER=your_mysql_user
-PASSWORD=your_mysql_password
-DB_NAME_PROD=your_database_name</code></pre>
+    Crie um arquivo <code>.env</code> na raiz do projeto com as seguintes variáveis:
+  HOST=your_mysql_host
+  USER=your_mysql_user
+  PASSWORD=your_mysql_password
+  DB_NAME_PROD=your_database_name
   </ol>
   
   <h2>Execução</h2>
