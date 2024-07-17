@@ -17,6 +17,22 @@
     PASSWORD=your_mysql_password
     DB_NAME_PROD=your_database_name</code></pre>
   </ol>
+  <h2>Bibliotecas Utilizadas</h2>
+  <ul>
+    <li>Scrapy</li>
+    <li>Pandas</li>
+    <li>SQLAlchemy</li>
+    <li>Streamlit</li>
+    <li>dotenv</li>
+  </ul>
+
+  <h2>Arquivos Principais</h2>
+  <ul>
+    <li><code>mercadolivre_spider.py</code> - Script de web scraping utilizando Scrapy.</li>
+    <li><code>data_processing.py</code> - Script de processamento e salvamento de dados.</li>
+    <li><code>dashboard.py</code> - Script para criar o dashboard interativo com Streamlit.</li>
+    <li><code>requirements.txt</code> - Lista de dependências necessárias para o projeto.</li>
+  </ul>
   
   <h2>Execução</h2>
   <ol start="4">
@@ -43,20 +59,19 @@ CREATE TABLE items (
     Para visualizar o dashboard interativo, execute o seguinte comando:
     streamlit run dashboard/dashboard.py
   </ol>
-  
-  <h2>Arquivos Principais</h2>
-  <ul>
-    <li><code>mercadolivre_spider.py</code> - Script de web scraping utilizando Scrapy.</li>
-    <li><code>data_processing.py</code> - Script de processamento e salvamento de dados.</li>
-    <li><code>dashboard.py</code> - Script para criar o dashboard interativo com Streamlit.</li>
-    <li><code>requirements.txt</code> - Lista de dependências necessárias para o projeto.</li>
-  </ul>
-  
-  <h2>Bibliotecas Utilizadas</h2>
-  <ul>
-    <li>Scrapy</li>
-    <li>Pandas</li>
-    <li>SQLAlchemy</li>
-    <li>Streamlit</li>
-    <li>dotenv</li>
-  </ul>
+<h2>Utilização do Streamlit</h2>
+<p>
+    O Streamlit é utilizado para criar um dashboard interativo que mostra os dados das commodities e suas transações.
+</p>
+
+<h3>Execução do Streamlit</h3>
+<ol>
+    <li>Certifique-se de que o ambiente virtual está ativado.</li>
+    <li>Execute o comando para iniciar o Streamlit:
+        <pre>
+streamlit run script.py
+        </pre>
+        <p>Substitua <code>script.py</code> pelo nome do arquivo Python que contém o código acima.</p>
+    </li>
+    <li>Abra o navegador e acesse <a href="http://localhost:8501">http://localhost:8501</a> para visualizar o dashboard.</li>
+</ol>
