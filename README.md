@@ -19,14 +19,29 @@
   
   <h2>Execução</h2>
   <ol>
+      <li>Crie um banco de dados mercado_livre e a seguinte tabela</li>
+      
+      use mercado_livre;
+    
+      create table items(
+      Brand varchar(25),
+      Name varchar(150),
+      Reviews_rating_number float,
+      Reviews_amount int,
+      Source varchar(100),
+      Data_coleta Datetime,
+      Old_price float,
+      new_Price float);
+  </ol>
+  <ol>
     <li>Para iniciar o processo de coleta de dados, execute o seguinte comando:</li>
     <pre><code>scrapy crawl mercadolivre</code></pre>
     
-    <li>Após a coleta de dados, processe e salve os dados no MySQL executando o script:</li>
-    <pre><code>python data_processing.py</code></pre>
+    Após a coleta de dados, processe e salve os dados no MySQL executando o script:
+    python data_processing.py
     
-    <li>Para visualizar o dashboard interativo, execute o seguinte comando:</li>
-    <pre><code>streamlit run dashboard.py</code></pre>
+    Para visualizar o dashboard interativo, execute o seguinte comando:
+    streamlit run dashboard.py
   </ol>
   
   <h2>Arquivos Principais</h2>
